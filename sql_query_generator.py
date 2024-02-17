@@ -31,7 +31,7 @@ def get_gemini_response(prompt):
 st.set_page_config(page_title="Text to SQL Query Generator")
 st.header("Gemini App to Get SQL Query")
 
-question = st.text_input("Input: ",key="input")
+question = st.text_input('Input:' ,key='input')
 submit = st.button("Submit")
 
 if submit:
