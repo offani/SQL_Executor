@@ -21,7 +21,7 @@ genai.configure(api_key=API_KEY)
 # database_name = 'pg-gemini-server'
 
 
-db = SQLDatabase.from_uri("postgres://avnadmin:AVNS_Nq9wk_bgSlbqY2FncEY@pg-gemini-gem-postgre.a.aivencloud.com:22752/geminitestdata?sslmode=require")
+db = SQLDatabase.from_uri("postgresql://avnadmin:AVNS_Nq9wk_bgSlbqY2FncEY@pg-gemini-gem-postgre.a.aivencloud.com:22752/geminitestdata?sslmode=require")
 
 
 def get_gemini_response(prompt):
