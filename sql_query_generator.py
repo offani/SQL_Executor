@@ -13,12 +13,7 @@ API_KEY = os.getenv('Google_API_KEY')
 postgres_uri=os.getenv("postgres_uri")
 genai.configure(api_key=API_KEY)
 
-# db details 
-# username = 'avnadmin'
-# password = 'AVNS_JGYSlUE8_DMQFL0Y4ml'
-# host = 'pg-gemini-server-gem-postgre.a.aivencloud.com'
-# port = '22752'  
-# database_name = 'pg-gemini-server'
+
 
 
 db = SQLDatabase.from_uri(postgres_uri)
