@@ -10,7 +10,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
 
 API_KEY = os.getenv('Google_API_KEY')
-
+postgres_uri=os.getenv("postgres_uri")
 genai.configure(api_key=API_KEY)
 
 # db details 
@@ -21,7 +21,7 @@ genai.configure(api_key=API_KEY)
 # database_name = 'pg-gemini-server'
 
 
-db = SQLDatabase.from_uri("postgresql://avnadmin:AVNS_Nq9wk_bgSlbqY2FncEY@pg-gemini-gem-postgre.a.aivencloud.com:22752/geminitestdata?sslmode=require")
+db = SQLDatabase.from_uri(postgres_uri)
 
 
 def get_gemini_response(prompt):
